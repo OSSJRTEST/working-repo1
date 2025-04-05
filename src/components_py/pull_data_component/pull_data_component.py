@@ -11,6 +11,7 @@ def pull_data(url: str, data: Output[Dataset]):
     Pull data component.
     """
     import pandas as pd
+    print("FOOOOOOOOOOOOOOOOOOO")
 
     df = pd.read_csv(url, sep=";")
     df.to_csv(data.path, index=None)
